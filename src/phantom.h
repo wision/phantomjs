@@ -43,6 +43,7 @@
 class WebPage;
 class CustomPage;
 class WebServer;
+class Rabbit;
 
 class Phantom : public QObject
 {
@@ -108,6 +109,7 @@ public slots:
     QObject* createCookieJar(const QString& filePath);
     QObject* createWebPage();
     QObject* createWebServer();
+    QObject* createRabbit();
     QObject* createFilesystem();
     QObject* createSystem();
     QObject* createCallback();

@@ -31,6 +31,7 @@ HEADERS = \
     filesystem.h \
     networkaccessmanager.h \
     phantom.h \
+    rabbit.h \
     repl.h \
     system.h \
     terminal.h \
@@ -50,6 +51,7 @@ SOURCES = \
     main.cpp \
     networkaccessmanager.cpp \
     phantom.cpp \
+    rabbit.cpp \
     repl.cpp \
     system.cpp \
     terminal.cpp \
@@ -65,9 +67,11 @@ OTHER_FILES = \
     modules/fs.js \
     modules/webpage.js \
     modules/webserver.js \
+    modules/rabbit.js \
     repl.js
 
 include(mongoose/mongoose.pri)
+include(qamqp/qamqp.pri)
 include(linenoise/linenoise.pri)
 include(qcommandline/qcommandline.pri)
 
