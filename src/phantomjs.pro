@@ -24,6 +24,7 @@ HEADERS += \
     callback.h \
     webpage.h \
     webserver.h \
+    rabbit.h \
     consts.h \
     utils.h \
     networkaccessmanager.h \
@@ -42,6 +43,7 @@ SOURCES += phantom.cpp \
     callback.cpp \
     webpage.cpp \
     webserver.cpp \
+    rabbit.cpp \
     main.cpp \
     utils.cpp \
     networkaccessmanager.cpp \
@@ -62,11 +64,13 @@ OTHER_FILES += \
     modules/fs.js \
     modules/webpage.js \
     modules/webserver.js \
+    modules/rabbit.js \
     modules/child_process.js \
     modules/cookiejar.js \
     repl.js
 
 include(mongoose/mongoose.pri)
+include(qamqp/qamqp.pri)
 include(linenoise/linenoise.pri)
 include(qcommandline/qcommandline.pri)
 

@@ -5,6 +5,7 @@
         <file>configurator.js</file>
         <file>modules/webpage.js</file>
         <file>modules/webserver.js</file>
+        <file>modules/rabbit.js</file>
         <file>modules/fs.js</file>
         <file>modules/system.js</file>
         <file>modules/child_process.js</file>
