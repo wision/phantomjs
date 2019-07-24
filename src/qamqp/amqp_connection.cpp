@@ -92,7 +92,7 @@ void ConnectionPrivate::tuneOk()
 	QByteArray arguments_;
 	QDataStream stream(&arguments_, QIODevice::WriteOnly);
 
-	stream << qint16(0); //channel_max
+	stream << qint16(CHANNEL_MAX); //channel_max
 	stream << qint32(FRAME_MAX); //frame_max
 	stream << qint16(heartbeatTimer_->interval() / 1000); //heartbeat
 

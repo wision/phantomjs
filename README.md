@@ -4,6 +4,17 @@ PhantomJS ([phantomjs.org](http://phantomjs.org)) is a headless WebKit scriptabl
 
 **Note**: Please **do not** create a GitHub pull request **without** reading the [Contribution Guide](https://github.com/ariya/phantomjs/blob/master/CONTRIBUTING.md) first. Failure to do so may result in the rejection of the pull request.
 
+## Build
+```bash
+docker run -it ubuntu:16.04
+```
+
+Once you're inside the container:
+
+  1. install `git` (and optionally `vim`)
+  2. continue according the [official instructions](https://phantomjs.org/build.html)
+  3. copy executable file `bin/phantomjs` to your host system using [docker cp](https://docs.docker.com/engine/reference/commandline/cp/)
+
 ## Use Cases
 
 - **Headless web testing**. Lightning-fast testing without the browser is now possible!

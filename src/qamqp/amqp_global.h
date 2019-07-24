@@ -12,6 +12,7 @@
 #define AMQPLOGIN "guest"
 #define AMQPPSWD  "guest"
 #define FRAME_MAX 131072
+#define CHANNEL_MAX 2047
 
 #define QAMQP_VERSION "0.2.0"
 
